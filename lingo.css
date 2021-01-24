@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	background-color: #252a34;
+	margin: 0;
+	padding: 0;
+}
+
+.main {
+	margin: 0 auto;
+	width: 1000px;
+	height: 750px;
+	background-color: #bbf1fa;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.container {
+	position: absolute;
+	margin: 0 auto;
+	width: 1000px;
+	height: 250px;
+	background-color: #51c2d5;
+}
+
+img {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 240px;
+	padding: 20px;
+}
+
+.Woord {
+	position: relative;
+	left: 120px;
+}	
+
+label {
+	margin-right: 5px;
+	color: white;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	color: black;
+}
+
+#woordInput {
+	width: 200px;
+	height: 40px;
+	border: none;
+	cursor: auto;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: black;
+	padding-left: 15px;
+	margin: 5px;
+}
+
+.primareBtns {
+	position: relative;
+	padding: 15px 25px;
+	font-size: 24px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: #fff;
+	background-color: #112d4e;
+	border: none;
+	border-radius: 4px;
+	box-shadow: 0 9px #bbf1fa;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	font-family: 'Lato', sans-serif;
+	margin-left: 100px;
+	bottom: 50px;
+	left: 360px;
+}
+
+.primareBtns:hover {
+	background-color: #c91d1d;
+}
+
+.primareBtns:active {
+  background-color: #112d4e;
+  box-shadow: 0 5px #bbf1fa;
+  transform: translateY(4px);
+}
+
+.infoBtns {
+	color: white;
+	background-color: #112d4e;
+	font-size: 12px;
+	font-weight: 600;
+	width: 70px;
+	height: 70px;
+	border-radius: 4px;
+	box-sizing: border-box;
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	position: relative;
+	transform: translate(-50%, -50%);
+	margin: 3px;
+	display: block;
+	top: 180px;
+	left: 800px;
+}
+
+.infoBtns:hover {
+	background-color: #c91d1d;
+	cursor: pointer;
+}
+
+#scoreNumber {
+	font-size: 30px;
+	font-weight: 800;
+}
+
+
+#highScoreElement {
+	font-size: 30px;
+	font-weight: 700;
+}
+
+#span1 {
+	font-size: 40px;
+	font-weight: 800;
+}
+
+.newElement {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	width: 400px;
+	top: 480px;
+}
+
+
+.lingoBoard {
+	width: 70px;
+	 height: 70px;
+	 line-height: 70px;
+	 border-radius: 4px;
+	 font-size: 20px;
+	 text-transform: uppercase;
+	 font-family: 'Lato', sans-serif;
+	 font-weight: 700;
+	 color: white;
+	 text-align: center;
+	 background-color: #0579cc;
+	 margin: 3px;
+}
+
+.uitleg {
+	  display: none;
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  width: 50%;
+
+	  background-color: white;
+	  padding: 6rem;
+	  border-radius: 5px;
+	  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+	  z-index: 10;
+}
+
+#uitlegP {
+	color: black;
+	font-size: 16px;
+	font-weight: 600;
+	font-family: 'Lato', sans-serif;
+}
+
+#headLine {
+	color: black;
+	font-family: 'Lato', sans-serif;
+}
+
+.gameWonLayout {
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 30%;
+	background-color: white;
+	padding: 4rem;
+	border-radius: 5px;
+	box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+	text-align: center;
+	z-index: 10;
+}
+
+#gameWon {
+	color: black;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+}
+
+#afsluiten, #gameAfsluiten {
+	position: absolute;
+  top: 1.2rem;
+  right: 2rem;
+  font-size: 5rem;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.winOverlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.labels {
+	color: #f5f4f4;
+	margin-left: 10px;
+}
+
+#letter0 {
+	display: hidden;
+}
+

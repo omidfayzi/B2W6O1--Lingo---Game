@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LINGO</title>
+	<link rel="stylesheet" type="text/css" href="lingo.css">
+</head>
+<body>
+	<div class="main">
+		<div class="container">
+			<img src="Lingo-removebg-preview.png" alt="Lingo-logo">
+			<div class="Woord">
+				<label class="labels" for="Woord">RAAD het woord:<br>
+				<input type="woordInput" id="woordInput" name="woordInput" placeholder=" &nbsp;&nbsp; Vul het juiste woord in">
+				</label>
+			</div>
+			<button class="primareBtns" id="startButton">
+					START
+			</button>
+			<button class="primareBtns" type="submit" id="submitButton">				CONTROLEER
+			</button>
+			<button class="infoBtns" id="score">
+					<p id="scoreNumber">0</p>  
+					PUNTEN  
+			</button>
+			<button class="infoBtns" id="vraagteken">
+					<span id="span1">?</span>  
+			</button>
+			<button class="infoBtns" id="gaverder">
+					<span id="span1">➤</span>  
+			</button>
+		</div>
+		<div class="newElement"></div>
+		<div class="uitleg">
+			<p id="afsluiten">&times;</p>
+			<h1 id="headLine">SPELREGELS VAN LINGO 🎲</h1>
+			<br>
+			<p id="uitlegP">
+				Het doel van het spel is het halen van LINGO, vind het juiste woord door te kies van de juiste letter op de juiste plek staat<br><br> Een gele letter zit wel in her woord, maar staat niet op de juiste plek en een rode letter staat wel op de juiste plaats.  
+			</p>
+		</div>
+		<div class="gameWonLayout">
+			<p id="gameAfsluiten">&times;</p>
+			<h1 id="gameWon">Je hebt gewonnen..🎉</h1>
+		</div>
+		<div class="overlay"></div>
+		<div class="winOverlay"></div>
+	</div>
+	<script type="text/javascript" src="lingo-nl.js"></script>
+	<script type="text/javascript" src="lingo.js"></script>
+</body>
+</html>
+
